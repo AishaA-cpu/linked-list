@@ -55,7 +55,15 @@ class LinkedList:
 #     # Time Complexity: ?
 #     # Space Complexity: ?
     def length(self):
-        pass
+        length = 0
+
+        current = self.head
+        if not current:
+            return length
+        while current:
+            length += 1
+            current = current.next
+        return length
 
         
 
